@@ -1,0 +1,91 @@
+body {
+    font-family:"Montserrat",serif;
+    background-color: #f1f1f1;
+}
+
+header{
+    background-color:#B5C6B4;
+    padding: 25px;
+    text-align: center;
+}
+
+#navbar {
+    overflow: hidden;
+    text-align: right;
+  }
+  
+  #navbar a {
+    display: inline-block;
+    color: white;
+    padding-left:15px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  #navbar a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .container{
+    display:grid;
+    grid-template-columns:1fr 5fr 1fr;
+    row-gap: 15px;
+  }
+  
+  
+  .container div:first-child{
+    grid-column: 1/-1;
+    background-image:url("../images/header.jpg");
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+  }
+
+  
+  .spiritContain div:first-child{
+    grid-column: 1/-1;
+    background-image:url("../images/spiritheader.jpg");
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+  }
+
+  .overview{
+    
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+  }
+
+  h1{
+    text-align:center;
+    padding:25px;
+  }
+
+  h2{
+    text-align:center;
+  }
+  
+  .gallery img{
+    margin: 10px;
+    width: 200px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+footer{
+    text-align:right;
+    font-size:10px;
+}
